@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "woongs-blog-gatsby",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "woongs <integral5137@gmail.com",
   "dependencies": {
     "gatsby": "^3.6.2",
     "gatsby-plugin-image": "^1.6.0",
