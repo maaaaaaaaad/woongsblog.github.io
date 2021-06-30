@@ -36,8 +36,8 @@ const Introduction: FunctionComponent = function () {
         <ProfileImage />
 
         <div>
-          <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Woong.</Title>
+          <SubTitle>Welcome to</SubTitle>
+          <Title>Woongs blog</Title>
         </div>
       </Wrapper>
     </Background>
