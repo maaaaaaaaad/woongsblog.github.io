@@ -1,4 +1,4 @@
-# Woongs Blog 🚀
+# Woongs personal Blog 🚀
 
 ## 1.Gatsby Link API
 
