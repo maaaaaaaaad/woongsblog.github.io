@@ -1,5 +1,12 @@
 # Woongs personal Blog 🚀
 
+**Stack**
+
+- Typescript
+- React
+- Gatsby
+- GraphQL
+
 ## 1.Gatsby Link API
 
 ```javascript
