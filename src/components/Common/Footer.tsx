@@ -6,20 +6,19 @@ const FooterWrapper = styled.div`
   place-items: center;
   margin-top: auto;
   padding: 50px 0;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   line-height: 1.5;
 
   @media (max-width: 768px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 
 const Footer: FunctionComponent = function () {
   return (
     <FooterWrapper>
-      Seoul S.KOREA
-      <br />© 2021 Woong
+      © {new Date().getFullYear()} Woong Seoul S.KOREA{' '}
     </FooterWrapper>
   );
 };
