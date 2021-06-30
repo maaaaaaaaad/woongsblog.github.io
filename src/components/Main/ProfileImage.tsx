@@ -1,10 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
-import myImage from '../../images/Typescript_logo.png';
+import Img, { FluidObject } from 'gatsby-image';
 
-const myImg = myImage as string;
+export interface ProfileImageProps {
+  profileImage: FluidObject;
+}
 
-const ProfileImageWrapper = styled.img`
+const ProfileImageWrapper = styled(Img)`
   width: 120px;
   height: 120px;
   margin-bottom: 30px;
@@ -16,8 +18,10 @@ const ProfileImageWrapper = styled.img`
   }
 `;
 
-const ProfileImage: FunctionComponent = function () {
-  return <ProfileImageWrapper src={myImg} alt="Profile Image" />;
+const ProfileImage: FunctionComponent<ProfileImageProps> = function ({
+  profileImage,
+}) {
+  return <ProfileImageWrapper fluid={profileImage} alt="Profile Image" />;
 };
 
 export default ProfileImage;
