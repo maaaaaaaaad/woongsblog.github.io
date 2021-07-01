@@ -74,3 +74,21 @@ const PostList: FunctionComponent<PostListProps> = function ({
     [selectedCategory],
   );
 ```
+
+## 4. Markdown contetn parse
+
+```javascript
+const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
+  return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+};
+```
+
+**dangerouslySetInnerHTML Spec**
+
+```javascript
+interface DOMAttributes<T> {
+        children?: ReactNode;
+        dangerouslySetInnerHTML?: {
+            __html: string;
+        };
+```

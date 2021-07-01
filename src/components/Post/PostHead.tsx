@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
+import PostHeadInfo, { PostHeadInfoProps } from 'components/Post/PostHeadInfo';
 import Img, { FluidObject } from 'gatsby-image';
 
 type GatsbyImgProps = {
@@ -8,7 +9,7 @@ type GatsbyImgProps = {
   className?: string;
 };
 
-export interface PostHeadProps {
+export interface PostHeadProps extends PostHeadInfoProps {
   thumbnail: {
     childImageSharp: {
       fluid: FluidObject;
@@ -33,6 +34,9 @@ const BackgroundImage = styled((props: GatsbyImgProps) => (
 `;
 
 const PostHead: FunctionComponent<PostHeadProps> = function ({
+  title,
+  date,
+  categories,
   thumbnail: {
     childImageSharp: { fluid },
   },
@@ -40,6 +44,7 @@ const PostHead: FunctionComponent<PostHeadProps> = function ({
   return (
     <PostHeadWrapper>
       <BackgroundImage fluid={fluid} alt="thumbnail" />
+      <PostHeadInfo title={title} date={date} categories={categories} />
     </PostHeadWrapper>
   );
 };
