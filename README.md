@@ -93,3 +93,32 @@ interface DOMAttributes<T> {
             __html: string;
         };
 ```
+
+## 5. About error WebpackError: ReferenceError: IntersectionObserver is not defined
+
+- Cause
+
+1. IntersectionObserver is browser API
+2. Then build, Gatsby using the NodeJS. NodeJs is not browser language. It's server
+
+- Sol 1
+
+```javascript
+if (IntersectionObserver === undefined) return;
+if (window === undefined) return;
+```
+
+- Sol 2
+
+In case of React, using UseEffect (because useEffect is client render)
+
+```javascript
+useEffect(() => {
+  observer.current = new IntersectionObserver((entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+
+    setCount(value => value + 1);
+    observer.unobserve(entries[0].target);
+  });
+}, []);
+```

@@ -13,6 +13,7 @@ module.exports = {
         stripQueryString: true,
       },
     },
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
