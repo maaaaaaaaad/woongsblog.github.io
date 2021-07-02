@@ -3,7 +3,7 @@ module.exports = {
     title: `Korean developer Woong`,
     description: `Woongs personal programming blog`,
     author: `Woong`,
-    siteUrl: "https://github.com/dongwoongoh", // 배포 후 변경 예정
+    siteUrl: 'https://woongs-blog.github.io/',
   },
   plugins: [
     {
@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://github.com/dongwoongoh',
+        siteUrl: 'https://woongs-blog.github.io/',
         stripQueryString: true,
       },
     },
