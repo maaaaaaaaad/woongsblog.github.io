@@ -1,3 +1,11 @@
+---
+date: '2021-07-01'
+title: 'Record'
+categories: ['Web', 'SEO', 'Optimization']
+summary: 'In this project Recording'
+thumbnail: './Typescript_logo.png'
+---
+
 # Woongs personal Blog 🚀
 
 ---Make a personal blog---
