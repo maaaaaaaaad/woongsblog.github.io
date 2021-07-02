@@ -8,7 +8,7 @@
 - React
 - Gatsby
 - GraphQL
-- Styled Components
+- Styled Components: EmotionJS
 
 ## 1. Gatsby Link API
 
